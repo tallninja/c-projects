@@ -12,6 +12,6 @@ int main()
   perimeter = 2 * (height + width);
   area = height * width; 
 
-  printf("\nArea: %e", area);
-  printf("\nPerimeter: %e\n\n", perimeter);
+  printf("\nArea: %f", area);
+  printf("\nPerimeter: %f\n\n", perimeter);
 }
