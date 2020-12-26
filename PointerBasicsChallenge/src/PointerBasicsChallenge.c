@@ -4,9 +4,9 @@
 void main(void)
 {
     int number = 25;
-    int *pnumber = NULL;
+    int *pnumber = NULL; // creates a pointer which references nothing
 
-    pnumber = &number;
+    pnumber = &number; // assigns the pointer the address of the number
 
     printf("\n\nThe value of Number: %d\n", number);
     printf("The value of Pnumber: %p\n\n", pnumber);
@@ -15,7 +15,7 @@ void main(void)
     printf("The size of Pnumber: %d bytes\n\n", (int)sizeof(pnumber));
 
     printf("The address of Number: %p\n", &number);
-    printf("The address of Pnumber: %p\n\n", &pnumber);
+    printf("The address of Pnumber: %p\n\n", &pnumber); // a pointer also has its own address in memory
 
-    printf("The value of the address pnumber is pointing to: %d\n\n", *pnumber);
+    printf("The value of the address pnumber is pointing to: %d\n\n", *pnumber); // dereferencing a pointer
 }
