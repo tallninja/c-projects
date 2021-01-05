@@ -1,3 +1,10 @@
+/*
+ * Author: Ernest Wambua
+ * Date: 05/01/21
+ * Purpose: Deep shallow copy
+ * 
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
