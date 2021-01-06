@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 {
 	char name[] = "Ernest";
 	char* reversed = NULL;
-	reversed = (char *)malloc(20 * sizeof(char));
+	reversed = (char *)malloc((strlen(name) + 1) * sizeof(char));
 	
 	if (reversed != NULL)
 	{
