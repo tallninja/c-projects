@@ -1,3 +1,11 @@
+/*
+ * Author: Ernest Wambua
+ * Date: 11/01/21
+ * Purpose: List Transfer
+ *
+ */
+
+
 // NOTE: in the last example we looked at the basics of a doubly linked list
 // here, I'll show you how you would normally use them as a 'queue'
 // a queue is a 'first-in, first-out' (FIFO) structure
