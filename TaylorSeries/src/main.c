@@ -7,9 +7,10 @@
  
  #include <stdio.h>
  #include <stdlib.h>
+ #include <math.h>
  
  int factorial(int num);
- int power(int num, int exponent);
+ //int power(int num, int exponent);
  
  int main(){
 	 float sum = 0;
@@ -22,26 +23,20 @@
 	 scanf("%d", &numOfTerms);
 	 
 	 int i = 1;
+	 int det = 1;
 	 while(numOfTerms != 0){
-		 sum += (power(x, i) / factorial(i));
+		 sum += (det * (pow((x * 0.01745329252), i) / factorial(i)));
+		 det *= (-1);
 		 i += 2;
 		 numOfTerms--;
 	 }
 	 
-	 printf("sin(%d) = %f", x, sum);
- }
- 
- int power(int num, int exponent){
-	 int y = exponent;
-	 int result = 1;
-	 while(y != 0){
-		 result *= num;
-		 y--;
-	 }
+	 printf("sin(%d) = %f\n\n", x, sum);
 	 
-	 return result;
+	 return 0;
  }
  
+
  int factorial(int num){
 	 int result = 1;
 	 for(int i = num; i > 0; i--){
